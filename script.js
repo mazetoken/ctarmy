@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     Config.EnforceCashTokenReceiptAddresses = true;
     var address = await wallet.getTokenDepositAddress();
     var bchBalance = await wallet.getBalance();
-    var content = "BCH address: " + "<br>" + address + "<br>" + "BCH balance: " + JSON.stringify(bchBalance) + "<br>" + "Seed phrase: " + wallet.mnemonic + "<br>" + "Private key: " + wallet.privateKeyWif + "<br>" + "<br>" + "You can signup.";
+    var content = "BCH address: " + "<br>" + address + "<br>" + "BCH balance: " + JSON.stringify(bchBalance) + "<br>" + "Seed phrase: " + wallet.mnemonic + "<br>" + "Private key: " + wallet.privateKeyWif + "<br>" + "<br>" + "Save seed phrase and private key.";
     $("#echo3").html(content);
   }
 });
