@@ -23,18 +23,22 @@
 
       <div class="card text-dark">
         <div class="card-header">
-          <h5>Login with BCH address and Maze Token Access Card (MTAC) NFT</h5>
+          <h5>Signup with BCH wallet and Maze Token Access Card (MTAC) NFT</h5>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Create Cash Tokens</h5>
-          <p class="card-text">You need MTAC NFT to enter Cash Tokens Army</p>
-          <input class="form-control" id="importWalletAddress" type="text" placeholder="BCH wallet address e.g. bchtest:zq..."><br><br>
-          <p><button id="importWatchWallet" class="btn btn-primary btn-sm">Go</button></p>
+          <h5 class="card-title">You can import or create a wallet, but you need MTAC NFT to enter Cash Tokens Army</h5>
+          <p class="card-text">This is a demo</p>
+          <input class="form-control" id="importSeedPhrase" type="text" placeholder="BCH wallet seed phrase">or<br>
+          <input class="form-control" id="importPrivateKey" type="text" placeholder="BCH address private key"><br>
+          <p><button id="import" class="btn btn-primary btn-sm">Go</button></p>or create a new wallet<br>
+          <p><button id="create" class="btn btn-primary btn-sm">Create</button></p>
           <div id="echo1"></div>
           <p></p>
           <div id="echo2"></div>
           <p></p>
           <div id ="echo3"></div>
+          <p></p>
+          <div id ="echo4"></div>
         </div>
       </div>
       <br>
@@ -49,6 +53,7 @@
               <h5 class="card-title">Welcome</h5>
               <p>This is your NFT access card</p>
               <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p>
+              <p><a href="https://mazetoken.github.io/.well-known/bitcoin-cash-metadata-registry.json">MTBCMR</a> Bitcoin Cash Metadata Registry example</p>
             </div>
           </div>
           </div>
@@ -59,8 +64,8 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Coming soon</h5>
-                <p>You are in The Cash Tokens Army</p>
-                <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p>
+                <p>You are in The Cash Tokens Army. This is a demo.</p>
+                <!-- <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p> -->
               </div>
             </div>
             </div>
@@ -75,6 +80,7 @@
           <a href="https://github.com/mazetoken/ctarmy"><img src="img/github.png" alt="Github" width="32"></a>
         </p>
         <p>Powered by: <a href="https://mainnet.cash">mainnet.cash</a> and <a href="https://my-cashtokens-webwallet.netlify.app/">My Cashtokens Web Wallet</a></p>
+        <p>Cash Tokens <a href="https://chipnet.chaingraph.cash">explorer</a> (chipnet-testnet)</p>
       </footer>
       <p></p>
       <br>
