@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bitcoin Cash - Cash Tokens Army">
     <meta name="web" content="https://ctarmy.netlify.app">
-    <link rel="icon" type="image/ico" sizes="32x32" href="img/logo.ico">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
     <title>Cash Tokens Army</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="bootstrap.min.js"></script>
@@ -25,52 +25,74 @@
         <div class="card-header">
           <h5>Signup with BCH wallet and Maze Token Access Card (MTAC) NFT</h5>
         </div>
+
         <div class="card-body">
-          <h5 class="card-title">You can import or create a wallet, but you need MTAC NFT to enter Cash Tokens Army</h5>
+          <p class="card-title">You can signup or create wallet, but you need MTAC NFT to enter Cash Tokens Army</p>
           <p class="card-text">This is a demo</p>
-          <input class="form-control" id="importSeedPhrase" type="text" placeholder="BCH wallet seed phrase">or<br>
+          <!-- <input class="form-control" id="importSeedPhrase" type="text" placeholder="BCH wallet seed phrase">or<br>
           <input class="form-control" id="importPrivateKey" type="text" placeholder="BCH address private key"><br>
-          <p><button id="import" class="btn btn-primary btn-sm">Go</button></p>or create a new wallet<br>
-          <p><button id="create" class="btn btn-primary btn-sm">Create</button></p>
+          <p><button id="import" class="btn btn-primary btn-sm">Go</button></p>or create a new wallet<br> -->
+
+          <!-- Button trigger modal -->
+          <p><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button></p>
+
+          <!-- Modal -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="signupModalLabel">Signup with BCH wallet</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-control" id="importSeedPhrase" type="text" placeholder="BCH wallet seed phrase">or<br>
+                  <input class="form-control" id="importPrivateKey" type="text" placeholder="BCH address private key"><br>
+                </div>
+                <div class="modal-footer">
+                  <p><button type="button" id="import" class="btn btn-primary btn-sm" data-bs-toggle="modal">Signup</button></p>
+                  <p><button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p><button id="create" class="btn btn-primary btn-sm">Create wallet</button></p>
           <div id="echo1"></div>
           <p></p>
           <div id="echo2"></div>
           <p></p>
           <div id ="echo3"></div>
-          <p></p>
-          <div id ="echo4"></div>
         </div>
       </div>
       <br>
-        <div id="Cta">
-          <div class="row">
-          <div class="col-sm-6">
+      <div id="Cta">
+        <div class="row">
+        <div class="col-sm-6">
+        <div class="card text-dark">
+          <div class="card-header">
+            <h5>Cash Tokens Army</h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Welcome</h5>
+            <p>This is your NFT access card</p>
+            <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p>
+            <p><a href="https://mazetoken.github.io/.well-known/bitcoin-cash-metadata-registry.json">MTBCMR</a> Bitcoin Cash Metadata Registry example</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6">
           <div class="card text-dark">
             <div class="card-header">
               <h5>Cash Tokens Army</h5>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Welcome</h5>
-              <p>This is your NFT access card</p>
-              <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p>
-              <p><a href="https://mazetoken.github.io/.well-known/bitcoin-cash-metadata-registry.json">MTBCMR</a> Bitcoin Cash Metadata Registry example</p>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="card text-dark">
-              <div class="card-header">
-                <h5>Cash Tokens Army</h5>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Coming soon</h5>
-                <p>You are in The Cash Tokens Army. This is a demo.</p>
-                <!-- <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p> -->
-              </div>
-            </div>
+              <h5 class="card-title">Coming soon</h5>
+              <p>You are in The Cash Tokens Army. This is a demo.</p>
+              <!-- <p><img src="img/mtaciconbig.png" alt="MTAC" width="256"></p> -->
             </div>
           </div>
         </div>
+      </div>
 
       <p></p>
       <br><br>
@@ -87,5 +109,12 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+      myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+      })
+    </script>
   </body>
 </html>

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     $("#echo2").html(content);
 
     if (nftTokenBalance > 0) {
-      var content = "Congratulations. You can enter Cash Tokens Army" + "<br>" + "<br>" + '<button class="btn btn-primary btn-sm" onclick="displayCta()">Enter Cash Tokens Army</button>';
+      var content = "Congratulations. You can enter Cash Tokens Army." + "<br>" + "<br>" + '<button class="btn btn-primary btn-sm" onclick="displayCta()">Enter Cash Tokens Army</button>';
       $("#echo3").html(content);
     } else if (nftTokenBalance === 0) {
       var content = "You can not enter Cash Tokens Army. You need MTAC NFT.";
@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     Config.EnforceCashTokenReceiptAddresses = true;
     var address = await wallet.getTokenDepositAddress();
     var bchBalance = await wallet.getBalance();
-    var content = "BCH address: " + "<br>" + address + "<br>" + "BCH balance: " + JSON.stringify(bchBalance) + "<br>" + "Seed phrase: " + wallet.mnemonic + "<br>" + "Private key: " + wallet.privateKeyWif
-    $("#echo4").html(content);
+    var content = "BCH address: " + "<br>" + address + "<br>" + "BCH balance: " + JSON.stringify(bchBalance) + "<br>" + "Seed phrase: " + wallet.mnemonic + "<br>" + "Private key: " + wallet.privateKeyWif + "<br>" + "<br>" + "You can signup.";
+    $("#echo3").html(content);
   }
 });
 
